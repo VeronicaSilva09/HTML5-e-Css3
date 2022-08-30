@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        code{
+            color:crimson;    
+        }
+    </style>
+</head>
+<body>
+    <h2> Lista Ordenada <code>&lt;ol&gt;</code> </h2>
+    <ol>
+        <li>Trabalho</li>
+        <li>Almoço</li>
+        <li>Estudo</li>
+        <li>Jantar</li>
+    
+    </ol>
+    <p>Se utiliza a tag &lt;li&gt; dentro da ol , para identificar cada item da lista. Ex:</p>
+    <pre>
+        <code>
+&lt;ol&gt;
+    &lt;li&gt;Trabalho&lt;/li&gt;
+    &lt;li&gt;Almoço&lt;/li&gt;
+    &lt;li&gt;Estudo&lt;/li&gt;
+    &lt;li&gt;Jantar&lt;/li&gt;
+&lt;/ol&gt;
+        </code>
+    </pre>
+    <h2>Exemplo de uso da tag <code>&lt;ol type="I" start="5"&gt;</code></h2>
+    <ol type="I" start="5">
+        <li>Banana</li>
+        <li>Goiaba</li>
+        <li>Maçã</li>
+        <li>Uva</li>
+        <li>Morango</li>
+    </ol>
+    <p>Neste exemplo acima, como diz o título, foi utilizado dois parâmetros dentro da tag &lt;ol&gt;, o <strong>type</strong> indica o tipo de ordem que será utilizado, neste caso foi em algarismo romano, já o <strong>start</strong> indica a partir de qual número a ordem será iniciada, neste caso foi a partir da quinta casa do algarismo romano.</p>
+
+    <h2>Lista não Ordenada <code>&lt;ul&gt;</code></h2>
+    <ul>
+        <li>Gato</li>
+        <li>Cachorro</li>
+        <li>Papagaio</li>
+        <li>Passaros</li>
+    </ul>
+
+    <p>A sintaxe da tag <strong>ul</strong> funcionada da mesma forma que a tag <strong>ol</strong>. E também seus <strong>type</strong>, são eles:</p>
+
+    <ul>
+        <li>disc</li>
+    </ul>
+    <ul type="circle">
+        <li>circle</li>
+    </ul>
+    <ul type="square">
+        <li>square</li>
+    </ul>
+
+    <h2>Misturando as coisas</h2>
+    <p></strong>:</p>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <ol type="a">
+            <li>Item 3.1</li>
+            <li>Item 3.2</li>
+            <li>Item 3.3</li>
+        </ol>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+
+    <h2>Lista de Definição</h2>
+    <p>É como se fosse um dicionário, temos os termos e as suas descrições. É uma lista sem demarcadores, mas bem útil em alguns casos.</p>
+    <p>Toda lista de definição está dentro de uma tag &lt;dl&gt; &lt;/dl&gt; <em>(definition list)</em>, cada termo é um &lt;dt&gt; <em>(definition term)</em> e cada descrição é um &lt;dd&gt; <em>(definition description)</em>. Veja o resultado do código abaixo:</p>
+        <pre>
+            <code>
+ &lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de marcação utilizada para criar o conteúdo de sites.&lt;/dd&gt;
+
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de marcação para a especificação de estilos de sites&lt;/dd&gt;
+
+    &lt;dt&gt;JavaScript&lt;/dt&gt;
+    &lt;dd&gt;Linguagem de programação para criar interatividades em sites.&lt;/dd&gt;
+&lt;/dl&gt;
+            </code>
+        </pre>
+
+        <h3>Resultado:</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação utilizada para criar o conteúdo de sites.</dd>
+        
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a especificação de estilos de sites</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para criar interatividades em sites.</dd>
+        </dl> <br>
+        
+        <p>O siginificado desse tipo de listagem é relacionado diretamente aos pares <strong>Termo + Descrição</strong> e isso nos ajuda bastante com o mecanismo de busca.</p>
+
+    <!--A partir daqui começamos a criar um exercício de lista categorizada-->
+    <h1>Exercício de Lista</h1>
+    <h2>Games Favoritos</h2>
+
+    <ul>
+        <li>Neo-Geo</li>
+        <ol>
+            <li>King Of Fighters</li>
+            <ul type="square">
+                <li>King of Fighters 2000</li>
+            </ul>
+                <li>Street Fighter</li>
+            <ul type="square">
+                <li>Street Fighter Alpha</li>
+            </ul>
+        </ol>
+    </ul>
+
+    <ul>
+        <li>Playstation 2</li>
+        <ol>
+            <li>GTA</li>
+            <ul type="square">
+                <li>GTA - San Andreas</li>
+            </ul>
+                <li>Crash</li>
+            <ul type="square">
+                <li>Crash 2</li>
+            </ul>
+        </ol>
+    </ul>
+
+    <ul>
+        <li>Xbox 360</li>
+        <ol>
+            <li>Dark Souls</li>
+            <ul type="square">
+                <li>Dark Souls 1</li>
+                <li>Dark Souls 2</li>
+            </ul>             
+        </ol>
+    </ul>
+
+    <ul>
+        <li>Playstation 4</li>
+        <ol>
+            <li>Dark Souls</li>
+            <ul type="square">
+                <li>Dark Souls 3</li>
+            </ul>
+                <li>BloodBorne</li>
+                <li>Paladins</li>
+            </ul>
+        </ol>
+    </ul>
+
+
+    <h2>Testando aula</h2>
+    <ol>
+        <li>Passaros</li>
+         <ul type="disc">
+            <li>gaivota</li>
+            <li>patos</li>
+            <li>aguia</li>
+            <li>falcão</li>
+        </ul>
+
+       <li>Mamiferos</li>
+        <ul type="square">
+            <li>Gato</li>
+            <li>cachorro</li>
+            <li>bezerro</li>
+            <li>baleia</li>
+        </ul>
+    </ol>
+         
+</body>
+
+</html>

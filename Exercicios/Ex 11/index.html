@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexíveis</title>
+</head>
+<body>
+    <h1>Imagens e Audio</h1>
+    <h2>Imagens dinâmicas</h2>
+    <p>Tente abrir a imagem abaixo, em diferentes janelas do navegador ou em dispositivos diferentes.</p>
+    <picture>
+            <source media="(max-width: 550px)" srcset="lulufofos-p.jpg" type="image/jpg">
+            <source media="(max-width: 1050px)" srcset="lulufofos-m2.jpg" type="image/jpg">
+            <source media="(max-width: 1250px)" srcset="lulufofos-m.jpg" type="image/jpg">
+            <img src="lulufofos.jpg" alt="foto flex grande">
+    </picture>
+    <h2>Audio</h2>
+    <p>Existem duas maneiras de colocar áudio em uma página web:</p>
+    <h3>Primeira Forma</h3>
+    <pre>
+        <code>
+    &lt;audio src="midia/coyotehearing.mp3" controls&gt;&lt;/audio&gt;
+        </code>
+    </pre>
+
+    <audio src="midia/coyotehearing.mp3" controls></audio><br>
+    <h3>Segunda Forma</h3>
+    <pre>
+        <code>
+&lt;audio preload="metadata" controls&gt;
+    &lt;source src="midia/coyotehearing.mp3" type="audio/mpeg"&gt;
+    &lt;source src="midia/coyotehearing.ogg" type="audio/ogg"&gt;
+    &lt;p&gt;Se o audio não funcionou provavelmente seu navegador não é compativel, baixe o &lt;a href="midia/coyotehearing.mp3" download=“coyotehearing.mp3” type=“audio/mpeg”&gt;audio aqui &lt;/a&gt;&lt;/p&gt;
+&lt;/audio&gt;
+        </code>
+    </pre>    
+    <audio preload="metadata" controls>
+        <source src="midia/coyotehearing.mp3" type="audio/mpeg">
+        <source src="midia/coyotehearing.ogg" type="audio/ogg">
+        <p>Se o audio não funcionou provavelmente seu navegador não é compativel, baixe o <a href="midia/coyotehearing.mp3" download=“coyotehearing.mp3” type=“audio/mpeg”>audio aqui</a></p>
+    </audio>
+
+    <h3>Inserindo Vídeo Localmente</h3>
+    
+    <video width="300" controls>
+        <source src="video/coffee-2.mp4" type="video/mp4">
+        <source src="video/coffee.webm" type="video/webm">
+        <p>O seu navegador não suporta este video, baixe ele <a href="video/coffee-2.mp4" download="video/coffee-2.mp4" type="video/mp4">aqui</a></p>
+    </video>
+
+    <h3>Inserindo Vídeo do Youtube</h3>
+    <iframe width="600" height="350" src="https://www.youtube.com/embed/DjOSM72cYac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

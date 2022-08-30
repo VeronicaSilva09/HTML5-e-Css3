@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+    <style>
+        mark {
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+
+    <h2>Negrito / Destaque</h2>
+    <p><b>Negrito sem semântica</b> utilizando a tag &lt;b&gt;, é apenas um formato sem significado, uma forma.</p>
+    <p>Nesta frase temos um <strong>destaque</strong> utilizando a tag &lt;strong&gt; que dará semântica a palavra ou frase destacada dentro dela.</p>
+
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase,temos um <i> termo em itálico</i> usando a tag &lt;i&gt; (não semântica).</p>
+    <p>Nesta frase temos um <em> termo em ênfase</em> usando a tag &lt;em&gt;(semântica)</p>
+
+    <h2>Marcação</h2>
+    <p>Podemos criar texto marcado utilizando a tag &lt;mark&gt;. <mark>Este é um exeplo de texto marcado com semântica</mark>, para dar sentido a frase, quaisquer outro tipo de marcação pode ser feito em CSS. <br>
+        Para alterar a cor do Mark, podemos usar a &lt;style&gt; dentro da tag mark,a tag final para alterar a cor ficaria dessa forma: <mark style="background-color:rgb(86, 213, 252)"> &lt;mark &lt;style background-color: blue;&gt;&gt; &lt;/mark&gt; </mark> 
+    </p>
+    <p>Para deixar salvo que todos os mark fique com a cor de que você deseja é só abrir uma tag style no head e pronto. </p>
+    <h2>Texto Deletado</h2>
+    <p>Podemos<del> marca um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado.  </p>
+    <h2>Texto Inserido</h2>
+    Podemos marca <ins>um texto como inserido</ins> para dar uma ênfase e indicar que eke foi adicionado depois.
+
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+</body>
+</html>

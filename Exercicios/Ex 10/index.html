@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncora</title>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pag02.html" rel="next">página 02</a></li>
+        <li><a href="noticia/pag03.html" rel="next">página 03</a></li>
+    </ul>
+    <h1>Vamos criar um link</h1>
+    <h2>Links externos</h2>
+    <p>Acesse o <a href="https://www.amazon.com.br">site da Amazon</a>, para compra de produtos diversos.</p>
+    <p>Para indicar o idioma original do site você pode utilizar o atributo hreflang="en", dentro das aspas você coloca o idioma original do site externo. Ex: &lt;a href="https://siteexeterno.com" hreflang="pt-br"&gt;.</p>
+
+    <h2>Link externo em uma nova janela</h2>
+    <p>Iremos usar o atributo <em>target</em> para controlar onde o site de destino vai abrir. Existem alguns valores para por neste atributo:</p>
+
+    <ul>
+        <li><strong>_blank</strong> vai abrir o link em uma nova janela em branco.</li>
+        <li><strong>_self</strong> vai abrir o link na janela ou frame atual (padrão).</li>
+        <li><strong>_top</strong> vai desfazer todos os frames e abrir o destino no navegador completo.</li>
+        <li><strong>_parent</strong> similar ao uso do <strong>_top</strong> em uma referência à janela mãe
+    nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir.</li>
+    </ul>
+    <p>Acesse o <a href="https://www.amazon.com.br" target="_blank">site da Amazon</a>, para compra de produtos diversos, utilizando o <mark>target com _blank</mark>. </p>
+
+    <h2>A utilização do rel</h2>
+    <p>Existe um recurso bem interessante para links que é indicar qual é a natureza do destino usando o atributo rel. Esse atributo aceita vários valores, entre eles vou citar:</p>
+    <ul>
+        <li><strong>next</strong> indica que o <em>link </em>é para a próxima parte do documento atual</li>
+        <li><strong>prev</strong> indica que o <em>link</em> é para a parte anterior do documento atual</li>
+        <li><strong>author</strong> indica que é um <em>link</em> para o site do autor do artigo atual</li>
+        <li><strong>external</strong> indica que é um <em>link</em> para outro site que não faz parte do site</li>
+        <li><strong>nofollow</strong> indica que é um <em>link</em> para um site não endossado,como um <em>link</em> pago
+        </li>
+    </ul>
+    
+
+
+    <h2>Links para Download</h2>
+    <p>Baixe o meu pdf: <a href="pdf/aula10.pdf">Download </a><br> 
+    Baixe o meu pdf zipado: <a href="pdf/aula10.zip">zip</a>
+    </p>
+    <p>Podemos usar ainda <ins>dentro da tag</ins> &lt;a&gt; o parametro <strong>download=""</strong> e o parametro <strong>type="application/pdf"</strong>. Dentro do parametro download será colocado o nome do arquivo a ser baixado, e dentro do parametro type será colocado o tipo do arquivo a ser baixado, no caso desse exemplo foi o tipo PDF, mas se fosse qualquer outro tipo poderá ser consultado nesse site: <a href="https://iana.org/assignments/media-types" hreflang="en" target="_blank" rel="external"><abbr title="Internet Assigned Numbers Authority">IANA</abbr></a></p>.
+
+
+</body>
+</html>
